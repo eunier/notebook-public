@@ -1,4 +1,4 @@
-// object to mimick a database
+// object to mimic a database
 const db = {
   posts: [
     { title: 'I love JavaScript', author: 'Wes Bos', id: 1 },
@@ -19,7 +19,7 @@ const db = {
 const getPostById = id => {
   // create a new promise
   return new Promise((resolve, reject) => {
-    // using setTimerout() to mimick a database
+    // using setTimerout() to mimic a database
     setTimeout(() => {
       // find post
       const post = db.posts.find(post => post.id === id);
@@ -36,7 +36,7 @@ const getPostById = id => {
 const getAuthorDetails = post => {
   // create a new promise
   return new Promise((resolve, reject) => {
-    // using setTimerout() to mimick a database
+    // using setTimerout() to mimic a database
     setTimeout(() => {
       // find author
       const authorDetails = db.authors.find(
