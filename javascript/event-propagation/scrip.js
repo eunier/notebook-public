@@ -1,9 +1,9 @@
 const containers = document.getElementsByClassName('container');
 
 for (let container of containers) {
-  // capturing phace, "parent" notified before target
+  // capturing phase, "parent" notified before target
   container.addEventListener('click', displayEventPhase, true);
-  // bubbling phace, "parent" is notifed after targer
+  // bubbling phase, "parent" is notifed after targer
   container.addEventListener('click', displayEventPhase, false);
 }
 
